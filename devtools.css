@@ -1,0 +1,59 @@
+@-moz-document url("chrome://browser/content/devtools/markup-view.xhtml") {
+    body { font-size: 15px !important;  font-family: monospace !important; background: linear-gradient(#282828, #111) !important; background-attachment: fixed !important; }
+    .editable, .codebox { color: #ccc !important; }
+    .tagname { color: #f5a !important; }
+    .attrname { color: #5af !important; }
+    .attrvalue { color: #fa5 !important; }
+    .editable:focus { outline: none !important;}
+    .attreditor:hover { border-bottom: 1px dotted #ccc !important; }
+    .theme-selected { background: transparent !important;}
+    .theme-selected:after { content: ''; position: absolute; top: 0; left: -4000px; width: 8000px; height: 100%; z-index: -1; border: 1px solid #555; background: linear-gradient(#000,#111); }
+    ::-moz-selection { background: #ccc !important; color: #000; }
+}
+
+@-moz-document url("chrome://browser/content/devtools/cssruleview.xhtml") {
+    html { font-size: 15px !important; font-family: monospace !important; background: linear-gradient(#282828, #111) !important; background-attachment: fixed !important; }
+    * { border: none !important; margin: 0 !important; }
+    .ruleview, .ruleview-selector { background: transparent !important; color: #ccc !important}
+    .ruleview-propertyname:hover, .ruleview-propertyvalue:hover {border-bottom: 1px dotted #ccc !important }
+    .ruleview-propertyname { color: #5af !important;  }
+    .ruleview-propertyvalue { color: #fa5 !important;  }
+    .ruleview-selector-matched { color: #f5a !important; }
+    .ruleview-selector-unmatched { color: #a62 !important; }
+    .ruleview-overridden { color: #ccc !important; }
+    .ruleview-rule-source { font-family: sans-serif !important; color: #a84 !important; }
+    .ruleview-rule-inheritance { font-family: sans-serif !important; color: #ccc !important; background: #333 !important; }
+    .ruleview-property { border-left-color: transparent !important; }
+    ::-moz-selection { background: #ccc !important; color: #000 !important; }
+}
+
+@-moz-document url("chrome://browser/content/devtools/computedview.xhtml") {
+    body { font-size: 15px !important; font-family: monospace !important; color: #ccc; background: linear-gradient(#282828, #000) !important; background-attachment: fixed !important; }
+    .rule-text { color : #f5a !important; }
+    .other-property-value { color : #f9e !important; }
+    .theme-bg-darker { background: rgba(48,48,48,.5) !important; }
+    .property-name { color: #5af !important; }
+    .property-value { color: #fa5 !important; }
+    ::-moz-selection { background: #ccc !important; color: #000 !important; }
+}
+
+@-moz-document url("chrome://browser/content/devtools/fontinspector/font-inspector.xhtml") {
+    * { font-size: 15px !important; background: transparent !important; color: #ccc !important; }
+    body { color: #ccc; background: linear-gradient(#282828, #000) !important; background-attachment: fixed !important; }
+    .font-preview { background: #aaa !important; }
+    .font-preview:hover { background: #ccc !important; }
+    .font-info { color: #fa5 !important; }
+    .font-name { color: #5af !important; }
+    #showall { background: #000 !important; }
+    ::-moz-selection { background: #ccc !important; color: #000 !important; }
+}
+
+@-moz-document url("chrome://browser/content/devtools/layoutview/view.xhtml") {
+    body { background: -moz-linear-gradient(#282828, #000) !important; background-attachment: fixed !important; }
+    * { font-size: 15px !important; font-family: monospace !important; color: #ccc !important;}
+    #margins { outline: 1px dotted #ccc !important; }
+    #borders { box-shadow: 0 0 12px #888 !important; border: 2px solid #ccc !important; }
+    #content { outline: 1px dotted #ccc !important; background: #000 !important }
+    .border span { background: #222 !important; outline: 1px solid #888 !important;}
+    .border span, .padding span, .margin span { color: #ccc !important; }
+}
