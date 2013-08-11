@@ -1,5 +1,15 @@
+@-moz-document url("chrome://browser/content/devtools/framework/toolbox.xul") {
+    .default-icon { display: none !important; }
+    #toolbox-tab-options { padding: 0 !important; }
+    .devtools-tab { font: message-box !important; color: #bbb !important; background: #444; border-radius: 6px 6px 0 0  !important; margin: 0 1.5px 0 1.5px  !important; max-width: 200px !important; padding: 1px 5px !important;}
+    .devtools-tab:hover { background: #888 !important; color: #fff !important }
+    .devtools-tab[selected="true"]       { color: #fff !important; background: #999 !important}
+    .devtools-tab[selected="true"]:hover { color: #fff !important; background: #bbb !important}
+    .devtools-tabbar { background:url("chrome://browser/skin/devtools/pattern-bg.alt2.png") #333 !important;}
+}
+
 @-moz-document url("chrome://browser/content/devtools/markup-view.xhtml") {
-    body { font-size: 15px !important;  font-family: monospace !important; background: linear-gradient(#282828, #111) !important; background-attachment: fixed !important; }
+    body { font-size: 20px !important;  font-family: monospace !important; background: linear-gradient(#282828, #111) !important; background-attachment: fixed !important; }
     .editable, .codebox { color: #ccc !important; }
     .tagname { color: #f5a !important; }
     .attrname { color: #5af !important; }
@@ -12,7 +22,7 @@
 }
 
 @-moz-document url("chrome://browser/content/devtools/cssruleview.xhtml") {
-    html { font-size: 15px !important; font-family: monospace !important; background: linear-gradient(#282828, #111) !important; background-attachment: fixed !important; }
+    html { font-size: 20px !important; font-family: monospace !important; background: linear-gradient(#282828, #111) !important; background-attachment: fixed !important; }
     * { border: none !important; margin: 0 !important; }
     .ruleview, .ruleview-selector { background: transparent !important; color: #ccc !important}
     .ruleview-propertyname:hover, .ruleview-propertyvalue:hover {border-bottom: 1px dotted #ccc !important }
@@ -28,7 +38,7 @@
 }
 
 @-moz-document url("chrome://browser/content/devtools/computedview.xhtml") {
-    body { font-size: 15px !important; font-family: monospace !important; color: #ccc; background: linear-gradient(#282828, #000) !important; background-attachment: fixed !important; }
+    body { font-size: 20px !important; font-family: monospace !important; color: #ccc; background: linear-gradient(#282828, #000) !important; background-attachment: fixed !important; }
     .rule-text { color : #f5a !important; }
     .other-property-value { color : #f9e !important; }
     .theme-bg-darker { background: rgba(48,48,48,.5) !important; }
@@ -38,7 +48,7 @@
 }
 
 @-moz-document url("chrome://browser/content/devtools/fontinspector/font-inspector.xhtml") {
-    * { font-size: 15px !important; background: transparent !important; color: #ccc !important; }
+    * { font-size: 20px !important; background: transparent !important; color: #ccc !important; }
     body { color: #ccc; background: linear-gradient(#282828, #000) !important; background-attachment: fixed !important; }
     .font-preview { background: #aaa !important; }
     .font-preview:hover { background: #ccc !important; }
@@ -50,10 +60,19 @@
 
 @-moz-document url("chrome://browser/content/devtools/layoutview/view.xhtml") {
     body { background: -moz-linear-gradient(#282828, #000) !important; background-attachment: fixed !important; }
-    * { font-size: 15px !important; font-family: monospace !important; color: #ccc !important;}
+    * { font-size: 20px !important; font-family: monospace !important; color: #ccc !important;}
     #margins { outline: 1px dotted #ccc !important; }
     #borders { box-shadow: 0 0 12px #888 !important; border: 2px solid #ccc !important; }
     #content { outline: 1px dotted #ccc !important; background: #000 !important }
     .border span { background: #222 !important; outline: 1px solid #888 !important;}
     .border span, .padding span, .margin span { color: #ccc !important; }
+}
+
+@-moz-document url("chrome://browser/content/devtools/netmonitor.xul") {
+    body { background: -moz-linear-gradient(#282828, #000) !important; background-attachment: fixed !important; }
+    * { font-size: 20px !important; font-family: monospace !important; color: #ccc !important;}
+    #requests-menu-footer { background: #222 !important; }
+    #requests-menu-status-button { width: auto !important; }
+    .plain.requests-menu-timings-division { }
+    .box-inherit.button-box { text-align: center !important;  }
 }
