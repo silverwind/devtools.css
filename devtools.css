@@ -1,5 +1,5 @@
 @-moz-document url("chrome://browser/content/browser.xul") {
-    .devtools-horizontal-splitter { background: #282828!important; }
+    .devtools-horizontal-splitter { background: #282828 !important; }
 }
 
 @-moz-document url("chrome://browser/content/devtools/framework/toolbox.xul") {
@@ -10,6 +10,13 @@
     .devtools-tab[selected="true"] { color: #fff !important; background: #777 !important; border-radius: 6px 6px 0 0 !important;}
     .devtools-tab[selected="true"]:hover { color: #fff !important; background: #bbb !important}
     .devtools-tabbar { background:url("chrome://browser/skin/devtools/pattern-bg.alt2.png") #333 !important;}
+}
+
+@-moz-document url("chrome://browser/content/devtools/inspector/inspector.xul") {
+    .breadcrumbs-widget-item { max-width: 300px !important; }
+    .scrollbutton-down, .scrollbutton-up { list-style-image: none !important; width: 1em}
+    .scrollbutton-down:after { content: '>';}
+    .scrollbutton-up:after { content: '<';}
 }
 
 @-moz-document url("chrome://browser/content/devtools/markup-view.xhtml") {
@@ -80,7 +87,3 @@
     .plain.requests-menu-timings-division { }
     .box-inherit.button-box { text-align: center !important;  }
 }
-
-
-
-
