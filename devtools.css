@@ -26,13 +26,12 @@
 @-moz-document url("chrome://browser/content/devtools/markup-view.xhtml") {
     body { font-size: 20px !important;  font-family: monospace !important; background: linear-gradient(#282828, #111) !important; background-attachment: fixed !important; }
     .editable, .codebox { color: #ccc !important; }
-    .tagname { color: #f5a !important; }
-    .attrname { color: #5af !important; }
-    .attrvalue { color: #fa5 !important; }
+    .tag { color: #f5a !important; }
+    .attr-name { color: #5af !important; }
+    .attr-value { color: #fa5 !important; }
     .editable:focus { outline: none !important;}
     .attreditor:hover { border-bottom: 1px dotted #ccc !important; }
-    .theme-selected { background: transparent !important;}
-    .theme-selected:after { content: ''; position: absolute; top: 0; left: -4000px; width: 8000px; height: 100%; z-index: -1; border: 1px solid #555; background: linear-gradient(#000,#111); }
+    .theme-selected { background: linear-gradient(#000,#111); border: 1px solid #666 }
     ::-moz-selection { background: #ccc !important; color: #000; }
 }
 
