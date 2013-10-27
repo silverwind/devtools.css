@@ -12,6 +12,10 @@
     .devtools-tabbar { background:url("chrome://browser/skin/devtools/pattern-bg.alt2.png") #333 !important;}
 }
 
+@-moz-document url("chrome://browser/content/devtools/webconsole.xul") {
+    #output-wrapper { overflow: scroll !important; }
+}
+
 @-moz-document url("chrome://browser/content/devtools/inspector/inspector.xul") {
     .breadcrumbs-widget-item { max-width: 300px !important; }
     .scrollbutton-down, .scrollbutton-up { list-style-image: none !important; width: 1em}
