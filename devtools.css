@@ -45,6 +45,7 @@
 @-moz-document url("chrome://browser/content/devtools/cssruleview.xhtml") {
   html { font-size: 16px !important; font-family: monospace !important; background: #181818 !important; }
   * { border: none !important; margin: 0 !important; }
+  .ruleview-rule-source-label { font-size: 16px !important; font-family: monospace !important; color: #5fa !important }
   .ruleview-propertyname:hover, .ruleview-propertyvalue:hover {border-bottom: 1px dotted #ccc !important; }
   .ruleview-propertyname { color: #5af !important;  }
   .ruleview-propertyvalue { color: #fa5 !important;  }
@@ -54,6 +55,7 @@
   .ruleview-rule-source { font-family: sans-serif !important; color: #a84 !important; }
   .ruleview-rule-inheritance { font-family: sans-serif !important; color: #ccc !important; background: #222 !important; }
   .ruleview-property { border-left-color: transparent !important; }
+  .ruleview-rule[uneditable="true"] { background: #080808 !important }
   ::-moz-selection { background: #ccc !important; color: #000 !important; }
 }
 
