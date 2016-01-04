@@ -45,10 +45,10 @@
 @-moz-document url("chrome://browser/content/devtools/cssruleview.xhtml") {
   html { font-size: 16px !important; font-family: monospace !important; background: #181818 !important; }
   * { border: none !important; margin: 0 !important; }
-  .ruleview-rule-source-label { font-size: 16px !important; font-family: monospace !important; color: #5fa !important }
+  .ruleview-rule-source-label { font-size: 12px !important; font-family: monospace !important; color: #5fa !important }
   .ruleview-propertyname:hover, .ruleview-propertyvalue:hover {border-bottom: 1px dotted #ccc !important; }
-  .ruleview-propertyname { color: #5af !important;  }
-  .ruleview-propertyvalue { color: #fa5 !important;  }
+  .ruleview-propertyname { color: #5af !important; }
+  .ruleview-propertyvalue { color: #fa5 !important; }
   .ruleview-selector-matched { color: #f5a !important; }
   .ruleview-selector-unmatched { color: #a62 !important; }
   .ruleview-overridden { color: #ccc !important; }
